@@ -10,7 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>console</module>
+        <module>redis</module>
     </modules>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+    </properties>
 
     <build>
         <plugins>
@@ -20,9 +25,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
 
                 <configuration>
-                    <compilerVersion>1.8</compilerVersion>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <compilerVersion>${jdk.version}</compilerVersion>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                 </configuration>
             </plugin>
         </plugins>
